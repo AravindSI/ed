@@ -14,6 +14,13 @@
                 const email=event.target.emailId.value;
                 localStorage.setItem('name',name);
                 localStorage.setItem('email',email);
+                let myObj={
+                    name:name,
+                    email:email
+                };
+              localStorage.setItem('myObj',JSON.stringify(myObj));
+              localStorage.getItem('myObj',JSON.parse(myObj));
+              
             }
         </script> 
 
